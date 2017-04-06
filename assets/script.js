@@ -3,6 +3,10 @@
 
 // Active isotope with jQuery code:
 
+$(function() {
+    $("img.lazy").lazyload();
+});
+
 $('.main-iso').isotope({
 	itemSelector: '.item',
 	layoutMode: 'fitRows'
@@ -18,4 +22,6 @@ $('.iso-nav ul li').click(function(){
 	});
 	return false;
 });
+
+
 

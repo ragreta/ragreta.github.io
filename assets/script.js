@@ -3,9 +3,9 @@
 
 // Active isotope with jQuery code:
 
-$(function() {
-    $("img.lazy").lazyload();
-});
+// $(function() {
+//     $("img.lazy").lazyload();
+// });
 
 $('.main-iso').isotope({
 	itemSelector: '.item',
@@ -22,6 +22,12 @@ $('.iso-nav ul li').click(function(){
 	});
 	return false;
 });
+
+ $("img").lazyload({
+    event : 'scroll'
+    ,effect : "fadeIn"
+    ,appear:function(){console.log('loaded image')}
+  });
 
 
 

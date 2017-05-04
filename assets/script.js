@@ -3,14 +3,20 @@
 
 // Active isotope with jQuery code:
 
-// $(function() {
-//     $("img.lazy").lazyload();
-// });
 
-$('.main-iso').isotope({
+var $grid = $('.main-iso').isotope({
 	itemSelector: '.item',
 	layoutMode: 'fitRows'
 });
+
+// BVB added code for imagesLoaded, it re-renders the layout after each image is loaded
+
+// layout Isotope after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.isotope('layout');
+});
+
+
 // Isotope click function
 $('.iso-nav ul li').click(function(){
 	$('.iso-nav ul li').removeClass('active');
@@ -23,11 +29,4 @@ $('.iso-nav ul li').click(function(){
 	return false;
 });
 
- $("img").lazyload({
-    event : 'scroll'
-    ,effect : "fadeIn"
-    ,appear:function(){console.log('loaded image')}
-  });
-
-
-
+// BVB removed lazy loading code

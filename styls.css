@@ -43,7 +43,7 @@ ul  li:hover {
 /*    background: #5274a9;*/
     color: #666;
 }
-/****** Main portfilio styling ********/
+/****** Main portfolio styling ********/
 
 .main-iso {
     width: 1000px;
@@ -53,6 +53,7 @@ ul  li:hover {
     left: 50%;*/
     margin-left:100px;
     margin-bottom:100px;
+
 }
 
 /*img{
@@ -69,10 +70,12 @@ ul  li:hover {
     margin: 10px;
     margin-bottom: 10px;
 
+
 }
 
 .main-iso .item img{
     width: 303px;
+
 }
 
 
